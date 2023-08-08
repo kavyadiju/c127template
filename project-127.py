@@ -22,12 +22,10 @@ def scrape():
 
 
   for cell in table_rows:
-    tmp = []
-    table_col = cell.find_all('td')
+    #
 
     for value in table_col:
-      data = value.text.strip()
-      tmp.append(data)
+      #
 
     scraped_data.append(tmp)
   
